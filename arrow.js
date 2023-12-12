@@ -45,3 +45,24 @@ console.log("BIGGEST:", findBiggestShort(1, 3, 2));
 const calculateAge = (year) => new Date().getFullYear() - year;
 
 console.log(`AGE:${calculateAge(1990)}`);
+
+//* ORNEK: Silindir Hacmi
+//******************************************/
+//? hacim = Pi x r x r x h
+
+const h = Number(prompt("h:"));
+const r = Number(prompt("r:"));
+// const pi = 3.14
+
+const volume = (r, h) => Math.PI * r * r * h;
+console.log("VOLUME:", volume(r, h).toFixed(2));
+console.log("VOLUME:", volume(r, h).toPrecision(5));
+
+//? toPrecision(5) aldigi parametreye gore bir sayinin tam ve kesir
+//? kisimlarinin ne kadarini gosterilecegini belirlemek icin
+//? kullanilabilir. 5 degeri tam ve kesir icin toplam 5 basamak kullan demektir.
+console.log("VOLUME:", volume(r, h).toExponential(5));
+//? toExponential() ise bir sayinin bilimsel (10 uzeri) olarak
+
+//* ORNEK: Bir fonksiyon icerisinde baska fonksiyonlar cagrilabilir (Hesap Makinası)
+//**************************************************/
