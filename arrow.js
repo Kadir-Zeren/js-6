@@ -41,3 +41,7 @@ console.log("BIGGEST:", findBiggestShort(1, 3, 2));
 //* ORNEK: Doğum tarihini parametre olarak alan ve ana
 //* programa yaşı hesaplayıp döndüren fonksiyonu yazınız.
 //******************************************************/
+
+const calculateAge = (year) => new Date().getFullYear() - year;
+
+console.log(`AGE:${calculateAge(1990)}`);
